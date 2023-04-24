@@ -1,6 +1,7 @@
 import React, { useEffect, useState }  from 'react'
 import TransactionList from './TransactionList'
 import Table from 'react-bootstrap/Table';
+import Search from './Search';
 
 export default function Transaction() {
 
@@ -15,6 +16,7 @@ export default function Transaction() {
   return (
     <div className='container m-3 p-3'> 
       <h3 className='bg-info text-white'>Bank of Flatiron</h3>
+      <Search />
     <Table striped bordered hover className="table table-sm">    
       <thead>
         <tr>
