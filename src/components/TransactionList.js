@@ -1,29 +1,17 @@
 import React from 'react'
 
-export default function TransactionList() {
+export default function TransactionList({index, category,date,description,amount}) { 
+
+  const isEven= index%2===0
+
   return (
-    <div>
-
-<table className="ui celled striped padded table">
-      <tbody>
-        <tr>
-          <th>
-            <h3 className="ui center aligned header">Date</h3>
-          </th>
-          <th>
-            <h3 className="ui center aligned header">Description</h3>
-          </th>
-          <th>
-            <h3 className="ui center aligned header">Category</h3>
-          </th>
-          <th>
-            <h3 className="ui center aligned header">Amount</h3>
-          </th>
+    <>
+      <tr className={isEven?"even":""}>
+            <td>{date}</td>
+            <td>{category}</td>
+            <td>{description}</td>
+            <td>{amount}</td>
         </tr>
-        
-      </tbody>
-
-    </table>
-    </div>
+    </>
   )
 }
