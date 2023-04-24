@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Transaction from './components/Transaction';
 
 function App() {
   return (
     <div className="App">
-      
+      < Transaction />
     </div>
   );
 }
