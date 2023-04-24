@@ -15,7 +15,7 @@ export default function Transaction() {
   return (
     <>
       <h3>Bank of Flatiron</h3>
-    <Table striped bordered hover responsive >    
+    <Table striped bordered hover className="table table-sm m-4">    
       <thead>
         <tr>
             <th>Date</th> 
