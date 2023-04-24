@@ -13,9 +13,9 @@ export default function Transaction() {
   },[]) 
 
   return (
-    <>
-      <h3>Bank of Flatiron</h3>
-    <Table striped bordered hover className="table table-sm m-4">    
+    <div className='container m-3 p-3'> 
+      <h3 className='bg-info text-white'>Bank of Flatiron</h3>
+    <Table striped bordered hover className="table table-sm">    
       <thead>
         <tr>
             <th>Date</th> 
@@ -31,6 +31,6 @@ export default function Transaction() {
             })}
         </tbody>
     </Table>
-</>
+</div>
   )
 }
