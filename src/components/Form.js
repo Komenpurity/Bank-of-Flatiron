@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Form() {
   return (
-    <form>
+    <form class="m-3">
     <div class="row">
         <div class="col">
         <input type="date" class="form-control" placeholder="Date"/>
@@ -17,6 +17,7 @@ export default function Form() {
         <input type="text" class="form-control" placeholder="Amount"/>
         </div>
     </div>
+    <button type="button" class="btn btn-success m-1">Add Transaction</button>  
     </form>
   )
 }
