@@ -37,8 +37,10 @@ As a user, I should be able to:
 1. See a table of the transactions.
 - Fill out and submit the form to add a new transaction. This should add the new transaction to the table as well as post the new transaction to the backend API for persistence.
 - Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
-Endpoints for Core Deliverables
-GET /transactions
+
+
+## Endpoints for Core Deliverables
+1. GET /transactions
 Example Response:
 
 [
@@ -57,7 +59,8 @@ Example Response:
     "amount": -10.55
   }
 ]
-POST /transactions
+
+2. POST /transactions
 Required Headers:
 
 {
@@ -101,9 +104,7 @@ Example Response:
 Purity Jepkorir
 
 ## Technologies Used
-- HTML
-- CSS
-- Javascript
+- ReactJs
 - JSON
 
 ## License
