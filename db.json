@@ -99,18 +99,11 @@
       "id": 14
     },
     {
-      "description": "d",
-      "amount": "a",
-      "category": "c",
-      "date": "2023-04-12",
+      "description": "bridgerton",
+      "amount": "20000",
+      "category": "movie",
+      "date": "2023-04-25",
       "id": 15
-    },
-    {
-      "description": "d",
-      "amount": "20",
-      "category": "c",
-      "date": "2023-04-05",
-      "id": 16
     }
   ]
 }

@@ -25,6 +25,8 @@ export default function Form({onAddItem}) {
             .then((r) => r.json())
             .then((data) => onAddItem(data))
             .catch(error => console.log(error))
+
+            event.target.reset();
     }
 
   return (
