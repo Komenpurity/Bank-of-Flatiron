@@ -15,12 +15,14 @@ export default function Transaction() {
     .catch(error => console.log(error))
   },[]) 
 
-  
+  function handleSearch() {
+    
+  }
 
   return (
     <div className='container m-3 p-3'> 
       <h3 className='bg-info text-white'>Bank of Flatiron</h3>
-      <Search />
+      <Search handleSearch = {handleSearch}/>
       <Form /> 
     <Table striped bordered hover className="table table-sm">    
       <thead>
