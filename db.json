@@ -97,7 +97,20 @@
       "category": "Food",
       "amount": "3000",
       "id": 14
+    },
+    {
+      "description": "d",
+      "amount": "a",
+      "category": "c",
+      "date": "2023-04-12",
+      "id": 15
+    },
+    {
+      "description": "d",
+      "amount": "20",
+      "category": "c",
+      "date": "2023-04-05",
+      "id": 16
     }
-    
   ]
 }
