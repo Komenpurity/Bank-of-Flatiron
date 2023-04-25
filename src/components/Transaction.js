@@ -12,13 +12,16 @@ export default function Transaction() {
     fetch("http://localhost:3000/transactions")
     .then(response => response.json())
     .then(data => setTransactions(data)) 
+    .catch(error => console.log(error))
   },[]) 
+
+  
 
   return (
     <div className='container m-3 p-3'> 
       <h3 className='bg-info text-white'>Bank of Flatiron</h3>
       <Search />
-      <Form />
+      <Form /> 
     <Table striped bordered hover className="table table-sm">    
       <thead>
         <tr>

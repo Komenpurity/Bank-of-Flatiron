@@ -4,7 +4,7 @@ export default function Form() {
     const [date,setDate] = useState("")
     const [category,setCategory] = useState("")
     const [description,setDescription] = useState("")
-    const [amount,setAmount] = useState("")
+    const [amount,setAmount] = useState(0)
     const [submittedData, setSubmittedData] = useState([])
 
     function handleAmount(event){
@@ -32,18 +32,21 @@ export default function Form() {
         setDescription("")
         setDate("")
         setCategory("")
-    }
 
-    const listSubmisions = submittedData.map((data,index) => {
-        return (
-            <tr key={index}> 
-            <td>{data.date}</td>
-            <td>{data.category}</td>
-            <td>{data.description}</td>
-            <td>{data.amount}</td> 
-        </tr>
-        )
-    })
+        fetch("http://localhost:3000/transactions", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => console.log(data)) 
+        .catch(error => console.log(error)) 
+        alert("Transaction added");
+    }
+    
+
 
   return (
     <form class="m-3" onSubmit={handleSubmit}>
@@ -61,7 +64,7 @@ export default function Form() {
         <input type="text" class="form-control" onChange={handleAmount} placeholder="Amount"/>
         </div>
     </div>
-        {listSubmisions}
+        
     <button type="button" class="btn btn-success m-1">Add Transaction</button>  
     </form>
   )
