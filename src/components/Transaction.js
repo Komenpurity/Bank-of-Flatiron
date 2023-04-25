@@ -7,6 +7,7 @@ import Form from './Form';
 export default function Transaction() {
 
   const [transactions,setTransactions] = useState([]) 
+  console.log(transactions)
 
   useEffect( () => {
     fetch("http://localhost:3000/transactions")
@@ -21,7 +22,7 @@ export default function Transaction() {
 
   return (
     <div className='container m-3 p-3'> 
-      <h3 className='bg-info text-white'>Bank of Flatiron</h3>
+      <h3 className='bg-info text-white p-2'>Bank of Flatiron</h3>
       <Search handleSearch = {handleSearch}/>
       <Form /> 
     <Table striped bordered hover className="table table-sm">    

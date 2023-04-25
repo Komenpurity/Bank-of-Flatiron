@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState } from 'react'
 
 export default function Form() {
     const [date,setDate] = useState("")
@@ -32,21 +32,7 @@ export default function Form() {
         setDescription("")
         setDate("")
         setCategory("")
-
-        fetch("http://localhost:3000/transactions", {
-            method: "POST",
-            headers: {
-            "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(data => console.log(data)) 
-        .catch(error => console.log(error)) 
-        alert("Transaction added");
     }
-    
-
 
   return (
     <form class="m-3" onSubmit={handleSubmit}>
