@@ -15,7 +15,7 @@ export default function Form({onAddItem}) {
             date:date
         }
         
-        fetch("http://localhost:3000/transactions", {
+        fetch("http://localhost:8001/transactions", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
