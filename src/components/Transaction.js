@@ -9,7 +9,7 @@ export default function Transaction() {
   const [transactions,setTransactions] = useState([]) 
 
   useEffect( () => {
-    fetch("http://localhost:8001/transactions") 
+    fetch("https://api.npoint.io/1a81959eb42f2050e8cc/transactions/") 
     .then(response => response.json())
     .then(data => setTransactions(data)) 
     .catch(error => console.log(error))
