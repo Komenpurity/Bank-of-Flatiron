@@ -15,7 +15,7 @@ export default function Form({onAddItem}) {
             date:date
         }
         
-        fetch("https://api.npoint.io/1a81959eb42f2050e8cc/transactions/", {
+        fetch("https://api.npoint.io/d923c245336df0873f37/transactions", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
